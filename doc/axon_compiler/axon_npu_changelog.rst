@@ -17,6 +17,30 @@ Changelog
 
 See the list of changes for a specific release of the Axon NPU software.
 
+Release 2.0.0  14 Sept 2026
+==========================
+
+* Notice!!!
+  This version is not backward compatible with previously compiled models, and
+  models compiled with this version are not compatible with older versions of the
+  driver.
+  The model structure ``nrf_axon_nn_compiled_model_s`` has been modified to support an arbitrary
+  number of inputs and outputs.
+  changes to ``nrf_axon_nn_compiled_model_s`` include:
+
+  * ``external_input_ndx`` field and associated APIs removed. All entries in the ``inputs[]`` field are external.
+  * "primary" output (fields starting with ``output_``) fields and "extra" outputs (fields starting with ``extra_outputs`` have been replaced with a consolidated ``outputs[]`` field.
+
+* Added:
+
+  * Compiler release v2.0.0.
+  * Unfused, unrolled GRU supported.
+  * SUB (subtract) operator supported.
+
+* Updated:
+
+  * Unfused, unrolled LSTM supported (no longer experimental). Input features (input width) and units (output width) can both exceed 512.
+
 Release 1.5.0  13 Aug 2026
 ==========================
 
