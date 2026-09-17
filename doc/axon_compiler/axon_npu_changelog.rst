@@ -35,7 +35,7 @@ This release has the following breaking changes:
   * Compiler release v2.0.0.
   * Support for unfused Gated Recurrent Unit (GRU).
     Only the unrolled form is supported.
-  * SUB (subtract) operator supported.
+  * Support for the SUB (subtract) operator.
 
 * Updated:
 
