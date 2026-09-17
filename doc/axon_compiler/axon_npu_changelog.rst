@@ -20,16 +20,15 @@ See the list of changes for a specific release of the Axon NPU software.
 Release 2.0.0  14 Sept 2026
 ==========================
 
-* Notice!!!
-  This version is not backward compatible with previously compiled models, and
-  models compiled with this version are not compatible with older versions of the
-  driver.
-  The model structure ``nrf_axon_nn_compiled_model_s`` has been modified to support an arbitrary
-  number of inputs and outputs.
-  changes to ``nrf_axon_nn_compiled_model_s`` include:
+This release has the following breaking changes:
 
-  * ``external_input_ndx`` field and associated APIs removed. All entries in the ``inputs[]`` field are external.
-  * "primary" output (fields starting with ``output_``) fields and "extra" outputs (fields starting with ``extra_outputs`` have been replaced with a consolidated ``outputs[]`` field.
+* You must recompile existing models.
+  Models and drivers are only compatible within the same major version.
+* The ``nrf_axon_nn_compiled_model_s`` model structure is modified to support a variable number of inputs and outputs:
+
+  * The ``external_input_ndx`` field and its associated APIs are removed.
+    All entries in the ``inputs[]`` field are now external.
+  * The primary output fields (starting with ``output_``) and the extra output fields (starting with ``extra_outputs``) are replaced with a single consolidated ``outputs[]`` field.
 
 * Added:
 
