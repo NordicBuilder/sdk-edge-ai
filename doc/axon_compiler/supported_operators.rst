@@ -272,7 +272,7 @@ Recurrent operators
      - Axon NPU | CPU
      - 1.4.0
    * - Unfused LSTM
-     - | full support as of v2.0.0
+     - | Supported as of v2.0.0
        | Only the unrolled form is supported
      - Axon NPU | CPU
      - 2.0.0
