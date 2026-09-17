@@ -39,7 +39,8 @@ This release has the following breaking changes:
 
 * Updated:
 
-  * Unfused, unrolled LSTM supported (no longer experimental). Input features (input width) and units (output width) can both exceed 512.
+  * Support for unfused, unrolled LSTM is no longer experimental.
+    Input features (input width) and units (output width) can now both exceed 512.
 
 Release 1.5.0  13 Aug 2026
 ==========================
