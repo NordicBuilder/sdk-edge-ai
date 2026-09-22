@@ -192,7 +192,7 @@ typedef struct nrf_axon_nn_compiled_model_tag_s  {
  * @brief Populates input_vector_list[input_no] with input_vector
  *
  * input_vector_list must be populated before performing inference.
- * @param[in] model to update.
+ * @param[in] compiled_model model to update.
  * @param[in] input_no index of the input to update.
  * @param[in] input_vector pointer to the input vector.
  */
@@ -442,7 +442,6 @@ int16_t nrf_axon_nn_get_classification(
  * occurring or will occur (ie, a simple one model system).
  *
  * @param[in] compiled_model model to copy input for.
- * @param[in] input_vector_list list of vectors to copy to each input.
  * @retval 0 on success, or a negative error code. Note: errors due to multiple users of axon are
  *         not detected.
  */

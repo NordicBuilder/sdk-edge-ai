@@ -18,7 +18,7 @@ Changelog
 See the list of changes for a specific release of the Axon NPU software.
 
 Release 2.0.0  14 Sept 2026
-==========================
+===========================
 
 This release has the following breaking changes:
 
